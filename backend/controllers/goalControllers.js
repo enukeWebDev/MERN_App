@@ -1,3 +1,5 @@
+const asyncHandler = require('express-async-handler');
+
 /**
  * Get goals
  * GET/api/goals
@@ -6,9 +8,9 @@
  * @param {*} res 
  */
 
-const getGoals = (req, res) => {
+const getGoals = asyncHandler(async (req, res) => {
   res.status(200).json({ message: 'Get goals...' });
-};
+});
 
 /**
  * Set goals
@@ -17,7 +19,7 @@ const getGoals = (req, res) => {
  * @param {*} req 
  * @param {*} res 
  */
-const setGoals = (req, res) => {
+const setGoals = asyncHandler(async (req, res) => {
 
   if (!req.body.text) {
     res.status(400)
@@ -25,7 +27,7 @@ const setGoals = (req, res) => {
   }
 
   res.status(200).json({ message: 'Set goal...' });
-};
+});
 
 /**
  * Update goals
@@ -34,9 +36,9 @@ const setGoals = (req, res) => {
  * @param {*} req 
  * @param {*} res 
  */
-const updateGoals = (req, res) => {
+const updateGoals = asyncHandler(async (req, res) => {
   res.status(200).json({ message: `Goal with ID ${req.params.id} has been updated.` });
-};
+});
 
 /**
  * Delete goals
@@ -45,9 +47,9 @@ const updateGoals = (req, res) => {
  * @param {*} req 
  * @param {*} res 
  */
-const deleteGoals = (req, res) => {
+const deleteGoals = asyncHandler(async (req, res) => {
   res.status(200).json({ message: `Goal with ID ${req.params.id} has been deleted.` });
-};
+});
 
 
 module.exports = { getGoals, setGoals, updateGoals, deleteGoals };
