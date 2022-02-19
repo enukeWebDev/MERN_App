@@ -18,6 +18,12 @@ const getGoals = (req, res) => {
  * @param {*} res 
  */
 const setGoals = (req, res) => {
+
+  if (!req.body.text) {
+    res.status(400)
+    throw new Error('Please try again - text field cannot be blank.')
+  }
+
   res.status(200).json({ message: 'Set goal...' });
 };
 
