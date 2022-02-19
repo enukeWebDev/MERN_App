@@ -6,8 +6,6 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
-app.get('/api/goals', (req, res) => {
-  res.status(200).json({ message: 'Starts here...' });
-});
+app.use('/api/goals', require('./routes/goalRoutes'))
 
 app.listen(port, () => console.log(`Server is running on PORT ${port}`));
