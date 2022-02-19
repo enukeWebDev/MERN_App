@@ -1,20 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const { getGoals, setGoals, updateGoals, deleteGoals } = require('../controllers/goalControllers');
 
-router.get('/', (req, res) => {
-  res.status(200).json({ message: 'Get goals...' });
-});
+/**
+ * Chaining 2 routes that has the same endpoint to make the more cleaner
+ * router.get('/', getGoals) & router.post('/', setGoals) have the same endpoint
+ * router.put('/:id', updateGoals) & router.delete('/:id', deleteGoals) has the same endpoint
+ */
 
-router.post('/', (req, res) => {
-  res.status(200).json({ message: 'Set goal...' });
-});
-
-router.put('/:id', (req, res) => {
-  res.status(200).json({ message: `Goal with ID ${req.params.id} has been updated.` });
-});
-
-router.delete('/:id', (req, res) => {
-  res.status(200).json({ message: `Goal with ID ${req.params.id} has been deleted.` });
-});
+router.route('/').get(getGoals).post(setGoals);
+router.route('/:id').put(updateGoals).delete(deleteGoals);
 
 module.exports = router;
