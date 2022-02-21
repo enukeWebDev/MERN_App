@@ -54,8 +54,6 @@ const registerUser = asyncHandler(async (req, res) => {
     res.status(400)
     throw new Error('Invalid user information')
   }
-
-  // res.json({ message: 'Register User' })
 })
 
 /**
@@ -86,7 +84,6 @@ const loginUser = asyncHandler(async (req, res) => {
     throw new Error('Invalid user information')
   }
 
-  // res.json({ message: 'Login User' })
 })
 
 /**
@@ -94,11 +91,18 @@ const loginUser = asyncHandler(async (req, res) => {
  * GET/api/users/me
  * @param {*} req 
  * @param {*} res 
- * @access Public
+ * @access Private
  */
-
 const getMe = asyncHandler(async (req, res) => {
-  res.json({ message: 'User data' })
+
+  const { _id, name, email } = await User.findById(req.user.id);
+
+  res.status(200).json({
+    id: _id,
+    name,
+    email,
+  })
+
 })
 
 //Generate JWT Token
