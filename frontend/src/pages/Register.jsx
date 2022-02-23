@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaUser } from 'react-icons/fa';
 
 
 function Register() {
@@ -12,8 +13,27 @@ function Register() {
 
   const { name, email, password, password2 } = formData;
 
+  const onChange = () => {
+
+  }
+
   return (
-    <div>Register</div>
+    <>
+      <section className="heading">
+        <h1>
+          <FaUser /> Register
+        </h1>
+        <p>Please Create an Account</p>
+      </section>
+
+      <section>
+        <form>
+          <input type="text" className="form-control"
+            id="name" name="name" value={name} placeholder="Please Enter Your Name"
+            onChange={onChange} />
+        </form>
+      </section>
+    </>
   )
 }
 
