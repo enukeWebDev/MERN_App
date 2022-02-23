@@ -28,9 +28,15 @@ function Register() {
 
       <section>
         <form>
-          <input type="text" className="form-control"
-            id="name" name="name" value={name} placeholder="Please Enter Your Name"
-            onChange={onChange} />
+          <div className="form-group">
+            <input type="text"
+              className="form-control"
+              id="name"
+              name="name"
+              value={name}
+              placeholder="Please Enter Your Name"
+              onChange={onChange} />
+          </div>
         </form>
       </section>
     </>
