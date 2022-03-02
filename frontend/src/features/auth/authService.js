@@ -1,5 +1,6 @@
 /*
-The service is strictly for making HTTP request and sending data back
+The service is strictly for making HTTP 
+request and sending data back
 Setting any data in local storage
 */
 
