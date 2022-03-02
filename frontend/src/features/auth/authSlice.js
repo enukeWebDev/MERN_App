@@ -1,8 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import authService from './authService';
 
-// Get user from localStorage 
-// localStorage only take 'string' - therefore we need to parse the JSON
+/**
+ * Get user from localStorage 
+ * localStorage only take 'string' 
+ * therefore we need to parse the JSON
+ */
 const user = JSON.parse(localStorage.getItem('user'));
 
 const initialState = {
@@ -32,6 +35,13 @@ export const register = createAsyncThunk('auth/register', async (user, thunkAPI)
   }
 })
 
+export const logout = createAsyncThunk('auth/logout',
+  async () => {
+    await authService.logout()
+  })
+
+
+
 export const authSlice = createSlice({
   name: 'auth',
   initialState,
@@ -60,6 +70,10 @@ export const authSlice = createSlice({
         state.isLoading = false
         state.isError = true
         state.message = action.payload
+        state.user = null
+      })
+
+      .addCase(logout.fulfilled, (state) => {
         state.user = null
       })
   },
