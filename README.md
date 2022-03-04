@@ -6,7 +6,7 @@ Simple layout / plan of the project before I started.
 
 This is a simple application of M-E-R-N stack. I am working on becoming more familiar and comfortable with the M-E-R-N stack. It was my first time working on MongoDB and Redux. It was definitely a good learning experience!
 
-When I was building the project, I leverage the use of different branch for each features. This saves me a TON of time as at one point - the app crashed. Because I used different branch, I was able to recover my project on it's working state! 
+When I was building the project, I leverage the use of different branch for each features. This saves me a TON of time as at one point - the app crashed. I was able to recover my project from the last working state branch.
 
 The app is a journal or something like a mini diary. 
   - If first time user - user MUST register
