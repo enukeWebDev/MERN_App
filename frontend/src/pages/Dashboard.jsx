@@ -40,7 +40,6 @@ function Dashboard() {
   return (
     <>
       <section className="heading">
-
         <h1>Welcome {user && user.name}</h1>
         <p>I journal my joy, and my joy expands exponentially forevermore. So be it.</p>
       </section>
@@ -49,23 +48,19 @@ function Dashboard() {
 
       <section className="content">
         {goals.length > 0 ? (
-
           <div className="goals">
-
             {goals.map((goal) => (
               <GoalItem key={goal._id} goal={goal} />
-
             ))}
           </div>
 
         ) : (
 
-          <h3>No Goals Yet</h3>
+          <h3>Start Journal-ing...</h3>
 
         )}
 
       </section>
-
     </>
   )
 }

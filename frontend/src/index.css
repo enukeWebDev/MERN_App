@@ -4,10 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-image: url('https://cdn.pixabay.com/photo/2019/10/09/23/19/nuns-4538350_960_720.jpg'); */
   background: #2d6326;
-  /* background:linear-gradient(90deg,rgba(101, 11, 228, 0.77),rgba(244, 67, 2, 0.562)); */
-  /* background:linear-gradient(90deg,rgba(182, 126, 126, 0.132),rgba(145, 142, 141, 0.562)); */
 }
 
 body {
@@ -32,8 +29,7 @@ li {
   line-height: 2.2;
 }
 
-h1,
-h3 {
+h1 {
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -42,6 +38,12 @@ h2 {
   font-weight: 300;
   font-style: italic;
   color: rgb(44, 42, 42);
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #9ec122;
 }
 
 .container {
@@ -103,7 +105,6 @@ h2 {
 }
 
 .goal {
-  /* background-color: #f4f4f4; */
   box-shadow: 5px 10px #110f0f;
   margin: 10px 0;
   padding: 20px 0 10px;

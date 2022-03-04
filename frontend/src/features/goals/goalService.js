@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/goals/'
+const API_URL = '/api/goals/';
 
 // Create New Goal
 const createGoal = async (goalData, token) => {
@@ -48,4 +48,4 @@ const goalService = {
   createGoal, getGoals, deleteGoal,
 }
 
-export default goalService
+export default goalService;

@@ -20,13 +20,10 @@ function Header() {
     <header className="header">
 
       <div className="logo">
-
-        <Link to="/">GoalSetter</Link>
-
+        <Link to="/">Journal-ing!</Link>
       </div>
 
       <ul>
-
         {user ? (
           <li>
             <button className="btn" onClick={onLogout}>
@@ -35,6 +32,7 @@ function Header() {
           </li>
 
         ) : (
+
           <>
             <li>
               <Link to="/login">

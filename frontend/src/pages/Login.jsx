@@ -70,16 +70,6 @@ function Login() {
 
       <section>
         <form onSubmit={onSubmit}>
-          {/* <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              id="name"
-              name="name"
-              value={name}
-              placeholder="Please Enter Your Name"
-              onChange={onChange} />
-          </div> */}
 
           <div className="form-group">
             <input
@@ -102,17 +92,6 @@ function Login() {
               placeholder="Please Enter Your Password"
               onChange={onChange} />
           </div>
-
-          {/* <div className="form-group">
-            <input
-              type="password"
-              className="form-control"
-              id="password2"
-              name="password2"
-              value={password2}
-              placeholder="Please Confirm Your Password"
-              onChange={onChange} />
-          </div> */}
 
           <div className="form-group">
             <button type="submit" className="btn btn-block">
