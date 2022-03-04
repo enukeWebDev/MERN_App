@@ -42,7 +42,7 @@ function Dashboard() {
       <section className="heading">
 
         <h1>Welcome {user && user.name}</h1>
-        <p>Goals Dashboard</p>
+        <p>I journal my joy, and my joy expands exponentially forevermore. So be it.</p>
       </section>
 
       <GoalForm />
