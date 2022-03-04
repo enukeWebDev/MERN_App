@@ -25,6 +25,7 @@ Screen Shots of the Final App:
 3. !["LoginPage"](https://github.com/enukeWebDev/MERN_App/blob/main/frontend/asset/LoginPage.png?raw=true)
 
 Stack - MongoDB, Express, React (Redux), NodeJS
+
 Dependencies -  please check package.json
 
 To run this project concurrently (Backend & Frontend)
