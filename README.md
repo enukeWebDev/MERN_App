@@ -1,3 +1,15 @@
+I called this project Journal-ing. 
+
+Simple layout / plan of the project before I started.
+
+!["PlanLayout"](https://github.com/enukeWebDev/MERN_App/blob/main/frontend/asset/Plan:Layout.png?raw=true)
+
+This is a simple application of M-E-R-N stack. I am working on becoming more familiar and comfortable with the M-E-R-N stack. It was my first time working on MongoDB and Redux. It was definitely a good learning experience!
+
+When I was building the project, I leverage the use of different branch for each features. This saves me a TON of time as at one point - the app crashed. Because I used different branch, I was able to recover my project on it's working state! 
+
+
+
 I'm currently learning REDUX.
 
 This MERN Project is currently on-going...
