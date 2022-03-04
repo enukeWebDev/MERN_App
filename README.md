@@ -10,8 +10,8 @@ This MERN Project is currently on-going...
 
 Screen Shots of the Final App:
 
-1. !["MainDashboard"](https://github.com/enukeWebDev/budget-tracker/blob/main/src/asset/MainDashboard.png?raw=true)
+1. !["MainDashboard"](https://github.com/enukeWebDev/MERN_App/blob/main/frontend/asset/MainDashboard.png?raw=true)
 
-2. !["DarkMode"](https://github.com/enukeWebDev/budget-tracker/blob/main/src/asset/DarkMode.png?raw=true)
+2. !["RegisterPage"](https://github.com/enukeWebDev/MERN_App/blob/main/frontend/asset/RegisterPage.png?raw=true)
 
-3. !["Main"](https://github.com/enukeWebDev/budget-tracker/blob/main/src/asset/MainPage.png?raw=true)
+3. !["LoginPage"](https://github.com/enukeWebDev/MERN_App/blob/main/frontend/asset/LoginPage.png?raw=true)
